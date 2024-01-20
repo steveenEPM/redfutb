@@ -1,0 +1,122 @@
+:root {
+    --colorBackground: #fafafa;
+    --color1: #323159;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--colorBackground)
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+button:active,a:active {
+    opacity: 0.5;
+}
+
+
+.containersScreen {
+    margin-left: 20%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+/*
+               CONTAINER HEADERS
+*/
+
+
+
+.headerContainer {
+    background-color: var(--color1);
+    height: 100%;
+    width: 17%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+    position: fixed;
+}
+
+.components h1,
+.components button {
+    color: var(--colorBackground);
+}
+
+.headerContainer .components {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.header_Btn {
+    border: none;
+    display: flex;
+    width: 100%;
+    padding: 3%;
+    align-items: center;
+    padding-left: 12%;
+    flex-direction: row;
+    gap: 8px;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 16px;
+    opacity: 0.5;
+    transition-duration: 500ms;
+}
+
+
+
+.header_Btn:hover,
+.header_Btn.active_Btn {
+    opacity: 1;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*
+    -------HOMES--------
+*/
+.textArea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #828c92;
+    margin-bottom: 10px;
+    outline: none;
+    overflow-y: hidden;
+
+}
+
+
+/*Eventos*/
+
+#imgae1{
+    position: fixed;
+    width: 550px;
+    height: 650px;
+    left: 63%;
+}
